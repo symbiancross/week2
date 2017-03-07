@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', function () {
 	$tanggal =  date("d-m-Y H:i:s", time());
 	$gini = "ya gitu";
@@ -29,4 +30,17 @@ Route::get('bebas', function () {
 
 Route::get('halo/bebas', function () {
     return view('terserah.bebas');
+});
+*/
+
+Route::get('/', function () {
+    return view('rumah');
+});
+
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('rumah/gallery', function () {
+    return view('gallery');
 });
